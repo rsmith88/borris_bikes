@@ -7,6 +7,6 @@ describe DockingStation do
 
   it 'runs method to release bike' do
     bike = subject.release_bike
-    expect(bike).to eq :working?
+    expect(bike).to be_working 
   end
 end

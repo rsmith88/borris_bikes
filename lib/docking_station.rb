@@ -1,10 +1,10 @@
 # creating file for docking station class
+require_relative 'bike'
 
 class DockingStation
 
   def release_bike
-    return true
-
+    bike = Bike.new
   end
 
 end
