@@ -4,3 +4,7 @@ require 'boris_bikes'
 		expect(DockingStation.new).to respond_to(:release_bike)
   end
 end
+RSpec.describe Bike do
+  it "creates instance of a bike class"
+  expect(Bike.new).to respond_to(:working)
+end
