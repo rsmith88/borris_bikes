@@ -10,11 +10,7 @@ class DockingStation
   end
 
   def return_bike(bike)
-    bike 
-  end
-
-  def bike
-    return_bike(@bike)
+    @bike = bike
   end
 
 end
