@@ -1,6 +1,6 @@
-describe DockingStation do
-  #it "Creates an object" do
-
-  #  docking_station = DockingStation.new
-  #  expect(docking_station).to be_a_kind_of(DockingStation)
+require 'boris_bikes'
+	RSpec.describe DockingStation do
+	it 'releases a bike' do
+		expect(DockingStation.new).to respond_to(:release_bike)
   end
+end
