@@ -5,7 +5,8 @@ require 'bike'
 describe DockingStation do
   it { is_expected.to respond_to :release_bike }
 
-  it 'responds to release bike' do
-    expect(bike).to eq DockingStation.release_bike
-  end 
+  it 'runs method to release bike' do
+    bike = subject.release_bike
+    expect(bike).to eq :working?
+  end
 end

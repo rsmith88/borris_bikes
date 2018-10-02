@@ -3,9 +3,8 @@
 class DockingStation
 
   def release_bike
-    if true
-      return bike
-    end 
+    return true
+
   end
 
 end
