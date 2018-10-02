@@ -4,5 +4,8 @@ require 'bike'
 
 describe DockingStation do
   it { is_expected.to respond_to :release_bike }
-  it { is_expected(DockingStation.release_bike).to respond_to :working? == true}
+
+  it 'responds to release bike' do
+    expect(bike).to eq DockingStation.release_bike
+  end 
 end
