@@ -1,3 +1,4 @@
+require 'boris_bikes'
 describe DockingStation do
   #it "Creates an object" do
 
