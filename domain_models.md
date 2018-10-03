@@ -24,3 +24,12 @@ DockingStation | return_bike
 
 bike <--- docked? ---> true/false
 docking_station <--- return_bike --> a bike
+
+Objects  | Messages
+------------- | -------------
+Public  |
+bike  | available?
+DockingStation | has_bikes?
+
+bike <--- available ---> true/false
+docking_station <--- has_bikes --> true/false

@@ -6,7 +6,7 @@ class DockingStation
   attr_accessor :bike
 
   def release_bike
-    bike = Bike.new
+    @bike 
   end
 
   def return_bike(bike)
