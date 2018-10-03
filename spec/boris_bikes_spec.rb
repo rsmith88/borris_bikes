@@ -8,8 +8,10 @@ RSpec.describe DockingStation do
     bike = DockingStation.new.release_bike
 		expect(bike.working?).to eq true
 	end
+  it "docks a bike" do
+		expect(DockingStation.new).to respond_to(:dock)
 end
-
+end
 RSpec.describe Bike do
   it "creates instance of a bike class" do
   	expect(Bike.new).to respond_to(:working?)
