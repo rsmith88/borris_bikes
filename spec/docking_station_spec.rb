@@ -7,11 +7,15 @@ describe DockingStation do
   describe '#release_bike' do
     it 'release bike' do
       bike = Bike.new
-      subject.return_bike(bike)
+      subject.dock(bike)
       expect(subject.release_bike).to eq bike
     end
   end
 
+  it 'release bike' do
+    bike = subject.release_bike
+    expect(bike).to be_working
+  end
   it 'returns docked bike' do
     bike = Bike.new
     subject.return_bike(bike)
